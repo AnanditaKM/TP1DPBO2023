@@ -5,7 +5,7 @@ class Mahasiswa extends SivitasAkademik {
   private String NIM;
   private String fakultas;
   private String prodi;
-  private ArrayList<String> textbooks;
+  
   private String laptop;
   Mahasiswa(){}
   Mahasiswa(String NIK, String NIM, String nama, String jenis_kelamin,  String asal_universitas,String fakultas, String prodi,String email_edu, String laptop) 
@@ -23,7 +23,7 @@ class Mahasiswa extends SivitasAkademik {
       this.NIM = NIM;
       this.fakultas = fakultas;
       this.prodi = prodi;
-      this.textbooks = new ArrayList<String>();
+     
       this.laptop = laptop;
   }
   public void setNIM(String b) // method UNTUK SET NIM
@@ -38,10 +38,7 @@ class Mahasiswa extends SivitasAkademik {
   {
       this.fakultas = d;
   }
-  public void setTextbooks(ArrayList<String> e)
-  {
-    this.textbooks = e;
-  }
+ 
   public void setLaptop(String f)
   {
     this.laptop = f;
@@ -56,9 +53,7 @@ class Mahasiswa extends SivitasAkademik {
   public String getProdi() {//method untuk get prodi
       return prodi;
   } 
-  public ArrayList<String> getTextbooks() {//method untuk get textbooks
-        return textbooks;
-  }
+ 
   public String getLaptop() {//method untuk get
     return laptop;
     }

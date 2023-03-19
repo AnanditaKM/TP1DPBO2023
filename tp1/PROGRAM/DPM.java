@@ -17,7 +17,6 @@ class DPM extends Mahasiswa {
       this.setNIM(NIM);
       this.setFakultas(fakultas);
       this.setProdi(prodi);
-      this.setTextbooks(new ArrayList<String>());
       this.setLaptop(laptop);
 
       this.posisi = posisi;

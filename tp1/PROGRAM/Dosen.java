@@ -5,7 +5,6 @@ class Dosen extends SivitasAkademik {
   private String NIP;
   private String fakultas;
   private String prodi;
-  private ArrayList<String> marker;
   private String laptop;
   Dosen(){}
   Dosen(String NIK, String NIP, String nama, String jenis_kelamin,  String asal_universitas,String fakultas, String prodi,String email_edu, String laptop) 
@@ -23,7 +22,6 @@ class Dosen extends SivitasAkademik {
       this.NIP = NIP;
       this.fakultas = fakultas;
       this.prodi = prodi;
-      this.marker = new ArrayList<String>();
       this.laptop = laptop;
   }
   public void setNIP(String b) // method UNTUK SET NIP
@@ -38,10 +36,7 @@ class Dosen extends SivitasAkademik {
   {
       this.fakultas = d;
   }
-  public void setMarker(ArrayList<String> e)
-  {
-    this.marker = e;
-  }
+
   public void setLaptop(String f)
   {
     this.laptop = f;
@@ -55,9 +50,7 @@ class Dosen extends SivitasAkademik {
 
   public String getProdi() {//method untuk get prodi
       return prodi;
-  } 
-  public ArrayList<String> getMarker() {//method untuk get marker
-        return marker;
+  
   }
   public String getLaptop() {//method untuk get
     return laptop;
